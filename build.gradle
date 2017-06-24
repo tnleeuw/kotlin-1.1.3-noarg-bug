@@ -1,0 +1,24 @@
+buildscript {
+    ext {
+//        kotlinVersion = '1.1.2-2'
+        kotlinVersion = '1.1.3'
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.jetbrains.kotlin:kotlin-noarg:$kotlinVersion"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: "kotlin-jpa"
+
+repositories() {
+    jcenter()
+}
+
+dependencies {
+    compile "javax:javaee-api:7.0"
+}
